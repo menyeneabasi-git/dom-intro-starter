@@ -65,7 +65,7 @@ console.log(listItems);
 listItems[0].textContent = "This is a new list item text";
 
 // access the third list item and add your name in strong tags to the text that is already there (include a space so it displays correctly)
-listItems[2].textContent = "Menyeneabasi Obong"
+listItems[2].innerHTML += "<strong><br>Menyeneabasi Obong</strong>"
 
 /*
     ********** PART 7 **********
@@ -73,3 +73,4 @@ listItems[2].textContent = "Menyeneabasi Obong"
 // If you inspect the HTML or view the file, you can see that there is a link below that has the hidden attribute on it. Use JavaScript to remove that attribute so that you can see that element display on the page.
 // access the link inside of the section with an ID of remove and remove the hidden attribute so it is visible on the page
 
+document.querySelector("#remove a").removeAttribute("hidden");
